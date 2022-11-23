@@ -1,4 +1,4 @@
-//index.js - main javascript for CellarWarden client.        
+//index.js - main javascript for TempehWarden client.        
 
         //var showConfig = "initConfig is here";
         var clientConfig = {};   //Client side copy of config object retrieved from server.

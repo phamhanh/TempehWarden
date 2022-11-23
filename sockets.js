@@ -1,4 +1,4 @@
-//sockets.js - socket i/o routines for CellarWarden
+//sockets.js - socket i/o routines for TempehWarden
 
 //Set up sockets to communicate with client
 //  Update lcd graphic, update client graph on new data, and check for changes in config.

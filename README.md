@@ -5,7 +5,7 @@
 </head>
 <body>
 <h2><a id="user-content-overview" class="anchor" href="#overview" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overview</h2>
-<p>CellarWarden is an application that runs on the Raspberry Pi
+<p>TempehWarden is an application that runs on the Raspberry Pi
 (B, B
 Plus, RPi 2 and RPi 3 supported; the Pi Zero is not supported, nor is
 the
@@ -15,10 +15,10 @@ provides a graphical display of these values over time. This is useful
 for monitoring wine cellars, kegerators/keezers, humidors, meat
 cellars,
 refrigerators, etc. for optimal temperature and humidity. If these
-values are out of range, CellarWarden can be set to send alarm emails
+values are out of range, TempehWarden can be set to send alarm emails
 and text messages to designated users.&nbsp;</p>
 <p></p>
-<p>CellarWarden now also provides
+<p>TempehWarden now also provides
 controllers for controlling temperature and humidity automatically,
 useful for maintaining wine cellar temperature and humidity, the
 temperature of a kegerator or keezer, or to control the temperature of
@@ -30,10 +30,10 @@ individual profiles
 to vary the setpoint over time.&nbsp;</p>
 <p></p>
 <p>For temperature and humidity probes,
-CellarWarden supports up to two DHT11/DHT22/AM2302 temperature/humidity
+TempehWarden supports up to two DHT11/DHT22/AM2302 temperature/humidity
 sensors connected to RPi GPIO pins. In addition, up to eight
 Dallas One-Wire (DS18B20) temperature sensors can be connected to the
-RPi and monitored by CellarWarden. As well, up to two door switches
+RPi and monitored by TempehWarden. As well, up to two door switches
 can be monitored to ensure that&nbsp;cellar or fermentation doors
 have
 not been left open
@@ -45,19 +45,19 @@ client app is handled by Javascript.&nbsp;</p>
 <h2><br>
 <a id="user-content-web-app" class="anchor" href="#web-app" aria-hidden="true"><span class="octicon octicon-link"></span></a></h2>
 <h2>Web App</h2>
-<p><a href="https://github.com/craigmw/CellarWarden/blob/master/public/help/MainSensors.jpg"><img style="border: 0px solid ; width: 1000px; height: 685px;" alt="Cellar Warden Overview" src="/public/help/MainSensors.jpg"></a><a href="https://github.com/craigmw/CellarWarden/blob/master/public/help/MainSensors.jpg" target="_blank"><br>
+<p><a href="https://github.com/craigmw/TempehWarden/blob/master/public/help/MainSensors.jpg"><img style="border: 0px solid ; width: 1000px; height: 685px;" alt="Cellar Warden Overview" src="/public/help/MainSensors.jpg"></a><a href="https://github.com/craigmw/TempehWarden/blob/master/public/help/MainSensors.jpg" target="_blank"><br>
 </a></p>
-<p>CellarWarden is a client/server application, with a Node.js
+<p>TempehWarden is a client/server application, with a Node.js
 server
 running as a service on the RPi perpetually. It continuously logs
 temperature and humidity data and stores this to a log file.
-CellarWarden now offers controller function to control temperature or
+TempehWarden now offers controller function to control temperature or
 humidity using hysteresis or PID control. A virtually unlimited number
 of controllers can be associated with temperature or humidity sensors
 to control the output of refrigerators, wine cellars, fermentation
-chambers, etc. CellarWarden only requires a Raspberry Pi, and connects
+chambers, etc. TempehWarden only requires a Raspberry Pi, and connects
 to such appliances via relay boards, with the relay boards driving the
-powering of these attached appliances. CellarWarden also provides
+powering of these attached appliances. TempehWarden also provides
 controller profiles, a method to vary the setpoint for temperature or
 humidity over time. These profiles can be generated using a <a style="color: rgb(51, 255, 51);" href="/public/help/help_profile.html">profile
 editor</a>, and can be saved or loaded for re-use.</p>
@@ -71,23 +71,23 @@ annotations indicating alarm conditions that were triggered. These
 conditions can be set in <a style="color: rgb(51, 255, 51);" href="/public/help/help_alarms.html">a dialog</a> opened by
 clicking on the Alarms
 button. Alarm notifications are sent to specified email addresses,
-including those associated with cell phone/SMS accounts. CellarWarden
+including those associated with cell phone/SMS accounts. TempehWarden
 also compresses older data, as can be configured under the Logging
 Option in the <a style="color: rgb(51, 255, 51);" href="/public/help/help_config.html">Configure dialog</a>.
-Alternatively, CellarWarden can
+Alternatively, TempehWarden can
 maintain data for a set period, deleting older data as time progresses
 in round-robbin fashion. These logging options prevent the log file
 from becoming too large and slowing down client side operations. Note
 that while
 not shown above, moving the mouse over the graphs will show the data
-values for each plot in legend to the right of the graph. CellarWarden
+values for each plot in legend to the right of the graph. TempehWarden
 call also monitor door open events and will plot these on the main
 screen. Alarms can be set up to notify the user if doors are left open
 too long.</p>
 <p></p>
 <h2><a id="user-content-hardware-configuration" class="anchor" href="#hardware-configuration" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hardware
 Configuration</h2>
-<p>The minimal hardware for CellarWarden is a single
+<p>The minimal hardware for TempehWarden is a single
 <a style="color: rgb(51, 255, 51);" href="https://www.adafruit.com/product/386">DHT11</a>/<a style="color: rgb(51, 255, 51);" href="https://www.adafruit.com/product/385">DHT22</a>/<a style="color: rgb(51, 255, 51);" href="https://www.adafruit.com/products/393">AM2302</a>
 combined temp/humidity sensor connected to a free GPIO pin on a
 Raspberry Pi B, B Plus or RPi2. As shown in the Fritzing schematic
@@ -111,14 +111,14 @@ set in Raspbian. However, newer implementations of <a style="color: rgb(51, 255,
 use a
 Device Tree.</a> Thus it is possible to use a different GPIO pin
 for setting up the
-Dallas One Wire bus. CellarWarden does not currently change this GPIO
+Dallas One Wire bus. TempehWarden does not currently change this GPIO
 setting, although it stores the GPIO number in its configuration for
 reference. </p>
-<p>CellarWarden also supports a hardware LCD character display
+<p>TempehWarden also supports a hardware LCD character display
 based on
-the Hitachi HD44780U controller. By default, CellarWarden will use a
+the Hitachi HD44780U controller. By default, TempehWarden will use a
 20x4 single led backlit parallel display such as <a style="color: rgb(51, 255, 51);" href="http://www.amazon.com/RioRand-trade-Module-Arduino-White/dp/B00GZ6GK7A/ref=pd_sim_pc_5?ie=UTF8&amp;refRID=0B8Q9M15C5P73Y20XB67">this</a>.
-CellarWarden also supports LCD displays that connect via I2C backpacks,
+TempehWarden also supports LCD displays that connect via I2C backpacks,
 including this <a style="color: rgb(51, 255, 51);" href="http://www.sainsmart.com/sainsmart-iic-i2c-twi-serial-2004-20x4-lcd-module-shield-for-arduino-uno-mega-r3.html">model</a>.
 While I2C displays are slower than parallel displays, only two GPIO
 pins are required and these can be shared with other devices, including
@@ -132,7 +132,7 @@ switch may also be used to switch on the LCD backlight (if used). Thus,
 a simple SPDT microswitch may be used in which the common is connected
 to Vcc, and the normally open contact is connected to the backlight pin
 on the LCD </p>
-<p>Note: CellarWarden uses the GPIO numbers as specified by
+<p>Note: TempehWarden uses the GPIO numbers as specified by
 Broadcom,
 not the actual pin numbers. GPIO numbers can be determined for
 different RPi boards <a style="color: rgb(51, 255, 51);" href="http://pi.gadgetoid.com/pinout">here</a>.</p>
@@ -140,7 +140,7 @@ different RPi boards <a style="color: rgb(51, 255, 51);" href="http://pi.gadgeto
 </a></p>
 <h2>
 <a id="user-content-schematics" class="anchor" href="#schematics" aria-hidden="true"><span class="octicon octicon-link"></span></a>Schematics</h2>
-<p><a href="https://github.com/craigmw/CellarWarden/blob/master/public/help/CellarWardenMin_bb.jpg" target="_blank"><img src="https://github.com/craigmw/CellarWarden/raw/master/public/help/CellarWardenMin_bb.jpg" style="max-width: 100%;"></a></p>
+<p><a href="https://github.com/craigmw/TempehWarden/blob/master/public/help/TempehWardenMin_bb.jpg" target="_blank"><img src="https://github.com/craigmw/TempehWarden/raw/master/public/help/TempehWardenMin_bb.jpg" style="max-width: 100%;"></a></p>
 <p>This is a relatively minimal setup involving one DHT22 to
 measure
 the cellar air temperature and humidity, a single DS18B20 One Wire
@@ -210,12 +210,12 @@ password</a>.</p>
 <pre>sudo apt-get update -y <span class="pl-k">&amp;&amp;</span> apt-get upgrade<br>sudo reboot</pre>
 </div>
 <p></p><p>With the RPi functioning properly, we can now install
-CellarWarden. </p>
+TempehWarden. </p>
 <p>First, we must install Node.js (Node versions 4.2.1 and 4.4.2
 are currently
 supported). Note
 that recent versions of Raspian Jesse include an older version of
-Node.js, and this must be uninstalled in order to run CellarWarden. &nbsp;To determine if node.js is already installed, type:</p><br><div class="highlight highlight-bash">
+Node.js, and this must be uninstalled in order to run TempehWarden. &nbsp;To determine if node.js is already installed, type:</p><br><div class="highlight highlight-bash">
 <pre>node -v<br>npm -v</pre></div><br>If either node.js or npm is installed, use the following commands to remove them so we can install a new copy of node.js:
 <br><div class="highlight highlight-bash"><pre>sudo apt-get remove nodejs<br>sudo apt-get remove npm</pre>
 </div><br><p>To
@@ -234,12 +234,12 @@ sensors):</p>
 <pre>cd /home/pi<br>wget http://www.airspayce.com/mikem/bcm2835/bcm2835-1.50.tar.gz<br>tar zxvf bcm2835-1.50.tar.gz<br>cd bcm2835-1.50<br>./configure<br>make<br>sudo make check<span style="font-family: Arial,sans-serif;"><br></span>sudo make install</pre>
 </div>
 <p></p>
-<p>To install CellarWarden, type the following:</p>
+<p>To install TempehWarden, type the following:</p>
 <div class="highlight highlight-bash">
-<pre><span class="pl-s3">cd</span> /home/pi<br>sudo apt-get install git-core<br>git clone https://github.com/craigmw/CellarWarden /home/pi/CellarW<br>cd /home/pi/CellarW<br>npm install</pre>
+<pre><span class="pl-s3">cd</span> /home/pi<br>sudo apt-get install git-core<br>git clone https://github.com/craigmw/TempehWarden /home/pi/CellarW<br>cd /home/pi/CellarW<br>npm install</pre>
 </div>
 <p></p>
-<p>To ensure that CellarWarden starts on bootup:</p>
+<p>To ensure that TempehWarden starts on bootup:</p>
 <div class="highlight highlight-bash">
 <pre><span class="pl-s3">cd</span> /etc<br>sudo nano rc.<span class="pl-s">local</span></pre>
 </div>
@@ -247,7 +247,7 @@ sensors):</p>
 <p>Add the following toward the end of rc.local (but before the
 "exit 0" line):</p>
 <div class="highlight highlight-bash">
-<pre><span class="pl-c">#Load CellarWarden on startup<br>cd /home/pi/CellarW<br>su root -c 'node cwdaemon.js'<br></span><span class="pl-s1"><span class="pl-pds"></span></span></pre>
+<pre><span class="pl-c">#Load TempehWarden on startup<br>cd /home/pi/CellarW<br>su root -c 'node cwdaemon.js'<br></span><span class="pl-s1"><span class="pl-pds"></span></span></pre>
 </div>
 <p></p>
 <p>To save the changes to rc.local, press Ctrl-X, Y and Enter.</p>
@@ -285,7 +285,7 @@ for more details about how to set up and configure these devices.</p>
 <pre>sudo reboot</pre>
 </div>
 <p></p>
-<p>Once the RPi restarts, the CellarWarden server should start
+<p>Once the RPi restarts, the TempehWarden server should start
 up. This can be checked by logging back into the RPi and typing:</p>
 <div class="highlight highlight-bash">
 <pre>top</pre>
@@ -293,20 +293,20 @@ up. This can be checked by logging back into the RPi and typing:</p>
 <p></p>
 <p>Look near the top of the list and you should see node under
 the
-Command column, indicating that CellarWarden is running in the
+Command column, indicating that TempehWarden is running in the
 background. Also, point your browser to the IP address of your RPi
 (which you should know by now if you are using SSH, if not, type
 ifconfig at the command line and look at the eth0 IP address listing),
-along with the default port address 8888 for the CellarWarden server.
+along with the default port address 8888 for the TempehWarden server.
 For example, type the following (with your RPi's local IP address) into
 the address bar of your browser:</p>
 <div class="highlight highlight-bash">
 <pre>http://192.168.1.50:8888</pre>
 </div>
 <p></p>
-<p>If successful, this should bring up the CellarWarden web app.
+<p>If successful, this should bring up the TempehWarden web app.
 Here
-you can configure CellarWarden for the hardware you wish to set up by
+you can configure TempehWarden for the hardware you wish to set up by
 clicking on the Configure button on the top right. Make sure to set up
 the proper server address (the IP address of the RPi) and port number
 (default 8888) so that the web app communicates properly with the
@@ -326,24 +326,24 @@ you
 experience WiFi dropouts, you can use<a style="color: rgb(51, 255, 51);" href="http://weworkweplay.com/play/automatically-connect-a-raspberry-pi-to-a-wifi-network/">
 this method</a> to force the
 RPi to reconnect to the WiFi network.</p>
-<p>Note that the CellarWarden daemon will continue to function,
+<p>Note that the TempehWarden daemon will continue to function,
 logging
 temperature and humidity, even if the WiFi connection drops. However,
 the web app will be unable to connect until the WiFi is re-established.</p>
 <h2><br>
 <a id="user-content-emailsms-alarms" class="anchor" href="#emailsms-alarms" aria-hidden="true"><span class="octicon octicon-link"></span></a></h2>
-<h2>Realtime Clock</h2><p>CellarWarden is highly dependent on the
+<h2>Realtime Clock</h2><p>TempehWarden is highly dependent on the
 correct time, as it logs significant amounts of time-sensitive data.
 The RPi does not have a built-in RTC, and instead, obtains its time
 from the internet. If the RPi is unable to connect to the internet, the
-time on the RPi will be incorrect and this will adversely affect operations of CellarWarden. To address this and ensure that
-CellarWarden always has the correct time regardless of internet
+time on the RPi will be incorrect and this will adversely affect operations of TempehWarden. To address this and ensure that
+TempehWarden always has the correct time regardless of internet
 connectivity, an RTC board may be connected to the RPi via its I2C
 pins. Adafruit offers a <a style="color: rgb(51, 255, 51);" href="https://www.adafruit.com/product/264">DS1307-based I2C RTC board</a>
 in kit form that requires minimal soldering and can be directly
 connected to the RPi's 3.3V line and I2C pins without the need for logic level
 shifters. More information about this is included in the <a style="color: rgb(51, 255, 51);" href="/public/help/help_hardware.html">Hardware Examples page</a> and is also available <a style="color: rgb(51, 255, 51);" href="https://learn.adafruit.com/adding-a-real-time-clock-to-raspberry-pi">here</a>.</p><h2><br></h2><h2>Email/SMS Alarms</h2>
-<p>CellarWarden can send alarm notifications to specified email
+<p>TempehWarden can send alarm notifications to specified email
 addresses if conditions are set in the Alarms dialog. For emails and
 SMS messages, it is necessary to provide an email account name and
 password to serve as the sender, as well as email addresses for the
@@ -363,7 +363,7 @@ web app as soon as possible to check on the status of your
 cellar/refrigerator. Click on the Alarms button and then click on the
 Clear Active Alarms button. This will turn off alarm triggering until
 the problem can be rectified. This will prevent additional alarms from
-being triggered (although CellarWarden can automatically do this if the
+being triggered (although TempehWarden can automatically do this if the
 Block Mult. Emails option is set to True). Note that the web app will
 show a dialog notification if an alarm has been triggered, and will
 continue to show this whenever the page is loaded until the Clear
@@ -376,7 +376,7 @@ Clear Active Alarms button is pressed.</p>
 </h2>
 <h2><a id="user-content-remote-access" class="anchor" href="#remote-access" aria-hidden="true"><span class="octicon octicon-link"></span></a>Remote
 Access</h2>
-<p>To access CellarWarden from a remote computer or smart phone,
+<p>To access TempehWarden from a remote computer or smart phone,
 it is
 possible to use a web browser as with on a local LAN. However, this
 requires a means to connect to the RPi through the internet to the
@@ -400,7 +400,7 @@ of that LAN. Port forwarding is typically set up in your router (e.g.
 forwarding in a different manner, you will need to consult your
 router's instruction manual for information about how to do so. Note
 that some routers allow you to specify a remote port address that is
-different from the local port address. CellarWarden defaults to port
+different from the local port address. TempehWarden defaults to port
 8888 for access to its web server. However, if you have another device
 on your RPi that uses this port, you can either set this port to a
 different number (in the Configure dialog), or use your router's port
@@ -416,18 +416,18 @@ refrigerator while away from your local LAN.</p>
 
 </p>
 <h2><br>
-<a id="user-content-updating-cellarwarden" class="anchor" href="#updating-cellarwarden" aria-hidden="true"><span class="octicon octicon-link"></span></a></h2>
-<h2>Updating CellarWarden</h2>
-<p>CellarWarden will be updated from time to time, and this will
+<a id="user-content-updating-TempehWarden" class="anchor" href="#updating-TempehWarden" aria-hidden="true"><span class="octicon octicon-link"></span></a></h2>
+<h2>Updating TempehWarden</h2>
+<p>TempehWarden will be updated from time to time, and this will
 be
 apparent by changes noted at the Github repository. To update your copy
-of CellarWarden, open the command line shell (using Putty, etc) and
+of TempehWarden, open the command line shell (using Putty, etc) and
 type:</p>
 <div class="highlight highlight-bash">
 <pre><span class="pl-s3">cd</span> /home/pi/CellarW<br>sudo git pull<br>npm update<br>sudo reboot</pre>
 </div>
 <p>This will copy any modified files from the Github repository
 into
-your CellarWarden folder and then reboot the RPi to institute the
+your TempehWarden folder and then reboot the RPi to institute the
 changes.&nbsp;</p>
 </body></html>

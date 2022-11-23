@@ -1,4 +1,4 @@
-//config.js - controls configuration for CellarWarden
+//config.js - controls configuration for TempehWarden
 
 exports.config = function( dirName ) {
     var cfg = {

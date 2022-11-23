@@ -1,4 +1,4 @@
-//pid.js - Adds PID control to CellarWarden. Ported from pid-controller with added modifications.
+//pid.js - Adds PID control to TempehWarden. Ported from pid-controller with added modifications.
 
 /** 
  * pid-controller -  A node port of the Arduino PID library intended to be used on the Raspberry Pi

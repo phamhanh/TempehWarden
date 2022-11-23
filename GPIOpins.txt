@@ -1,5 +1,5 @@
 GPIOpins.txt
-Description of GPIO pins to use for CellarWarden.
+Description of GPIO pins to use for TempehWarden.
 
 GPIO pin 	Level Shifter?	Function
 SDA			Yes				I2C (Direct (w/o level shifter for RTC))

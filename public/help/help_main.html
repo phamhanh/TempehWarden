@@ -6,26 +6,26 @@
 </style><title>Main</title></head>
 <body>
 
-    <h2>Main Window</h2><p>The main window in CellarWarden
+    <h2>Main Window</h2><p>The main window in TempehWarden
 presents information about the status of sensors and controllers that
 have been set up and provides a means to configure the server that
 operates in the background on the Raspberry Pi. The main window is
 broken into two parts, the banner at the top and the graph window that
-displays logged data.</p><img style="width: 1259px; height: 857px;" alt="Main Sensors" src="MainSensors.jpg"><br><br><h2>The Banner</h2><p>CellarWarden presents a banner at the top of the main window
-showing buttons that allow configuration of CellarWarden, the title and
-a virtual LCD display.&nbsp;</p><p></p><p><span style="font-weight: bold;">Buttons</span></p><p><span style="font-weight: bold;">Configure</span>: Opens the <a style="color: rgb(51, 255, 51);" href="help_config.html">Configuration Dialog</a> to configure overall operations of CellarWarden.</p><p><span style="font-weight: bold;">Controllers</span>: Opens up the <a style="color: rgb(51, 255, 51);" href="help_controllers.html">Controllers Dialog</a> to allow configuration of each controller.</p><p><span style="font-weight: bold;">Alarms</span>: Click this to configure alarms using the <a style="color: rgb(51, 255, 51);" href="help_alarms.html">Alarms Dialog</a>.</p><p><span style="font-weight: bold;">Help</span>: Click this to open the CellarWarden help pages.</p><br><h2>LCD Display</h2><p>A
+displays logged data.</p><img style="width: 1259px; height: 857px;" alt="Main Sensors" src="MainSensors.jpg"><br><br><h2>The Banner</h2><p>TempehWarden presents a banner at the top of the main window
+showing buttons that allow configuration of TempehWarden, the title and
+a virtual LCD display.&nbsp;</p><p></p><p><span style="font-weight: bold;">Buttons</span></p><p><span style="font-weight: bold;">Configure</span>: Opens the <a style="color: rgb(51, 255, 51);" href="help_config.html">Configuration Dialog</a> to configure overall operations of TempehWarden.</p><p><span style="font-weight: bold;">Controllers</span>: Opens up the <a style="color: rgb(51, 255, 51);" href="help_controllers.html">Controllers Dialog</a> to allow configuration of each controller.</p><p><span style="font-weight: bold;">Alarms</span>: Click this to configure alarms using the <a style="color: rgb(51, 255, 51);" href="help_alarms.html">Alarms Dialog</a>.</p><p><span style="font-weight: bold;">Help</span>: Click this to open the TempehWarden help pages.</p><br><h2>LCD Display</h2><p>A
 virtual LCD display is shown at the right of the banner and provides
-realtime updates of the status of CellarWarden. This displays the same
+realtime updates of the status of TempehWarden. This displays the same
 information as a hardware LCD display if one is connected to the
 Raspberry Pi. If no controllers are
 active, this display only shows a single page.</p><p><span style="font-weight: bold;">LCD Page 1:</span></p><img style="width: 365px; height: 131px;" alt="Main LCD1" src="MainLCD1.jpg"><p>This page shows the current date and time, the temperature and humidity values from DHT1 (a temperature/humidity sensor),
 and the temperature detected on onew1, a DS81B20 1-wire temperature
-probe. When CellarWarden is first started, this bottom row will show
+probe. When TempehWarden is first started, this bottom row will show
 the IP address of the server for one minute. If an Alarm has been
 triggered, the bottom row will instead indicate that an Alarm has been
 triggered until the Clear Active Alarms button is pressed (more
 information about this is available in the <a style="color: rgb(51, 255, 51);" href="help_alarms.html">Alarms dialog</a>).&nbsp;</p><p></p><p style="font-weight: bold;">LCD Page 2, etc.:</p><p>If
-one or more controllers are active, CellarWarden will display the
+one or more controllers are active, TempehWarden will display the
 status of each active controller by toggling the page, showing each
 controller in round-robbin fashion as well as LCD page 1...</p><img style="width: 375px; height: 139px;" alt="Main LCD 2" src="MainLCD2.jpg"><p><span style="font-weight: bold;">Row 1</span>: Displayed here are the controller number (Ctrl 0) and the name of the controller (Fermentor 1).</p><p><span style="font-weight: bold;">Row 2</span>: The input (process variable/PV) and the name of the primary sensor (onew1) are displayed.</p><p><span style="font-weight: bold;">Row 3</span>: The setpoint (SP) and output (OutP) are shown. <span style="font-weight: bold;">OutP</span> designates that this controller is using PID mode, whereas a controller using Hysteresis mode will display <span style="font-weight: bold;">OutH</span>.</p><p><span style="font-weight: bold;">Row 4</span>:
 The status of the controller is shown here. &nbsp;In this case, the

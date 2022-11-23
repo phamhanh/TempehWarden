@@ -1,4 +1,4 @@
-//autotune.js - Adds autotuning functions to CellarWarden.
+//autotune.js - Adds autotuning functions to TempehWarden.
 //  Can only run autotuning on one actuator at a time.
 
 //Requires.

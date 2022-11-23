@@ -1,5 +1,5 @@
 {
-  "name": "CellarWarden",
+  "name": "TempehWarden",
   "version": "1.0.3",
   "description": "Monitors/controls wine cabinet or cellar temperatures and humidity. Now adds temp/humidity control.",
   "main": "CellarW.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/craigmw/CellarWarden.git"
+    "url": "git://github.com/craigmw/TempehWarden.git"
   },
   "keywords": [
     "wine",
@@ -21,9 +21,9 @@
   "author": "Craig M. Walsh",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/craigmw/CellarWarden/issues"
+    "url": "https://github.com/craigmw/TempehWarden/issues"
   },
-  "homepage": "https://github.com/craigmw/CellarWarden",
+  "homepage": "https://github.com/craigmw/TempehWarden",
   "dependencies": {
     "compare-versions": "^3.0.1",
     "cron": "^1.1.0",

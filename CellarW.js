@@ -1,9 +1,9 @@
-//CellarW.js - CellarWarden: Cellar monitor with temp/humidity control and alarm functionality.
+//CellarW.js - TempehWarden: Cellar monitor with temp/humidity control and alarm functionality.
 //Uses DHT22 to detect temp/humidity, plus DS18B20 to check bottle temps. 
 //CellarW.js is main server file. Client files are index.html and ...
 //Inspiration from https://github.com/evgkib/RaspberryPi-temp, brewpi.com, etc.
 
-var cwVersion = "1.0.3";  //CellarWarden version. 
+var cwVersion = "1.0.3";  //TempehWarden version. 
 var cwDEBUG = false;      //Debugging mode? If true, suppresses error catching and allows crash.
 
 //Dependencies
@@ -114,7 +114,7 @@ var lcdData = {
 
 //Note that server is being started for logging purposes.
 var timeNow = new Date();
-utils.log( '\n\n\n' + timeNow + ' - CellarWarden server is starting...');
+utils.log( '\n\n\n' + timeNow + ' - TempehWarden server is starting...');
 
 //Set up controllers.
 var ctrls = [];
@@ -850,7 +850,7 @@ function compressLogFile ( cfgTemp ) {
 
 // If ctrl+c is hit, free resources, turn off all actuators and exit.
 process.on('SIGINT', function() {
-    utils.log( 'CellarWarden is shutting down after Ctrl-C (SIGNINT).', 'white', true );
+    utils.log( 'TempehWarden is shutting down after Ctrl-C (SIGNINT).', 'white', true );
     shutdown.shutDown( config, ctrls );
     //process.exit();
 });
@@ -858,7 +858,7 @@ process.on('SIGINT', function() {
 
 // If process is terminated, free resources, turn off all actuators and exit.
 process.on('SIGTERM', function() {
-    utils.log( 'CellarWarden is shutting down after termination signal received (SIGTERM).', 'white', true );
+    utils.log( 'TempehWarden is shutting down after termination signal received (SIGTERM).', 'white', true );
     shutdown.shutDown( config, ctrls );    
     //process.exit();
 });
@@ -867,6 +867,6 @@ process.on('SIGTERM', function() {
 if ( cwDEBUG == false ) {
     //Deal with uncaught exceptions...
     process.on( 'uncaughtException', function( err ) {
-        utils.log( 'ERROR: Caught exception in CellarWarden: ' + err, 'red', true );
+        utils.log( 'ERROR: Caught exception in TempehWarden: ' + err, 'red', true );
     });
 };    

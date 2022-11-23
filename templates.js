@@ -1,4 +1,4 @@
-//templates.js - handles profile template loading and saving for CellarWarden.
+//templates.js - handles profile template loading and saving for TempehWarden.
 
 var fs = require( 'fs' );
 var utils = require( './utils.js' );

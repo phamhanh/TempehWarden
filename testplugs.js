@@ -1,4 +1,4 @@
-//testplugs.js - tests CellarWarden plugins
+//testplugs.js - tests TempehWarden plugins
 
 var cwPlugs = require( 'cwPlugins' );
 

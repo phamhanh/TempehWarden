@@ -1,4 +1,4 @@
-//utils.js - Utility functions for CellarWarden.
+//utils.js - Utility functions for TempehWarden.
 
 
 var fs = require( 'fs' );

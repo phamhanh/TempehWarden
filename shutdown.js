@@ -1,4 +1,4 @@
-//shutdown.js - Shutdown processing for CellarWarden
+//shutdown.js - Shutdown processing for TempehWarden
 //shutDown() - Turns off lcd, gpio, etc. on SIGINT or SIGTERM.
 //  config - configuration object
 //  ctrls - array of controllers
@@ -33,7 +33,7 @@ exports.shutDown = function( config, ctrls ) {
     //Set two second timeout to make sure everything finishings.
     console.log( 'Waiting for shutdown...' );
     setTimeout( function() {
-        console.log('CellarWarden now shut down.' );
+        console.log('TempehWarden now shut down.' );
         process.exit();
     }, 2000 );
 };

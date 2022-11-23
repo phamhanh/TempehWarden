@@ -1,4 +1,4 @@
-//plugins.js - Load plugins for CellarWarden
+//plugins.js - Load plugins for TempehWarden
 
 var vs = require( 'fs');
 var path = './node_modules/';

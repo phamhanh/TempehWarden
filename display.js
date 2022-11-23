@@ -1,4 +1,4 @@
-//Display.js - Adds LCD display capabilities to CellarWarden.
+//Display.js - Adds LCD display capabilities to TempehWarden.
 //  Used to update hardware and virtual LCD displays.
 
 //Requires

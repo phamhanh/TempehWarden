@@ -1,4 +1,4 @@
-//Tooltip.js - Adds touch-friendly tooltips to CellarWarden.
+//Tooltip.js - Adds touch-friendly tooltips to TempehWarden.
 // Obtained from: http://osvaldas.info/elegant-css-and-jquery-tooltip-responsive-mobile-friendly 
 
 $( function()

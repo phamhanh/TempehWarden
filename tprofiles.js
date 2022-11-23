@@ -1,4 +1,4 @@
-// tprofiles.js - Temperature profile handling for CellarWarden.
+// tprofiles.js - Temperature profile handling for TempehWarden.
 
 var VERBOSE = false;
 

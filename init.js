@@ -1,4 +1,4 @@
-//init.js - initialization routines for CellarWarden
+//init.js - initialization routines for TempehWarden
 
 //If client has updated config.json (or on startup), reload this file. Also, initialize everything.
 function updateConfig( configAction ) {

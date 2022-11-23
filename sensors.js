@@ -1,4 +1,4 @@
-//sensors.js - Gathers sensor data for CellarWarden
+//sensors.js - Gathers sensor data for TempehWarden
 var utils = require('./utils.js');
 
 //node_modules

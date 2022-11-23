@@ -1,4 +1,4 @@
-//controller.js: Add temp and humidity controllers to CellarWarden.
+//controller.js: Add temp and humidity controllers to TempehWarden.
 
 var VERBOSE = false;
 

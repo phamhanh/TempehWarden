@@ -6,10 +6,10 @@
 </style><title>Hardware</title></head>
 <body><h2>Hardware Examples</h2>
 
-    <p>CellarWarden supports many
+    <p>TempehWarden supports many
 different hardware configurations for temperature/humidity monitoring
 and control for a variety of applications. Here are a few examples of
-such hardware configurations.</p><h2>Minimal Setup</h2><img style="width: 800px; height: 712px;" alt="Minimal Configuration" src="CellarWardenMin_bb.jpg"><p>Here, a modest monitoring configuration is shown. A Raspberry Pi is connected via a <a style="color: rgb(51, 255, 51);" href="https://www.adafruit.com/products/2029">Pi Cobbler Plus</a>
+such hardware configurations.</p><h2>Minimal Setup</h2><img style="width: 800px; height: 712px;" alt="Minimal Configuration" src="TempehWardenMin_bb.jpg"><p>Here, a modest monitoring configuration is shown. A Raspberry Pi is connected via a <a style="color: rgb(51, 255, 51);" href="https://www.adafruit.com/products/2029">Pi Cobbler Plus</a>
 to a breadboard. A single DS18B20 1-wire temperature probe is connected
 to GPIO 4, with a 4.7k resistor tied to the 3.3 volt rail. A single
 DHT22 temperature/humidity probe is connected via GPIO 5, also with a
@@ -18,7 +18,7 @@ DHT22 temperature/humidity probe is connected via GPIO 5, also with a
 This configuration is useful for monitoring wine cellars, meat
 lockers, cigar humidors, refrigerators, etc. </p><h2>Complex Monitoring Configuration</h2>
 
-<p><a href="https://github.com/craigmw/CellarWarden/blob/master/CellarWarden_bb.jpg"><img style="border: 0px solid ; width: 800px; height: 600px;" alt="Complex Monitoring" src="CellarWarden_bb.jpg"></a><a href="https://github.com/craigmw/CellarWarden/blob/master/CellarWarden_bb.jpg" target="_blank"><br></a></p>
+<p><a href="https://github.com/craigmw/TempehWarden/blob/master/TempehWarden_bb.jpg"><img style="border: 0px solid ; width: 800px; height: 600px;" alt="Complex Monitoring" src="TempehWarden_bb.jpg"></a><a href="https://github.com/craigmw/TempehWarden/blob/master/TempehWarden_bb.jpg" target="_blank"><br></a></p>
 
 <p>Shown are two DHT22/AM2302 sensors connected on GPIO pins 5 and 6
 (RPiB+), two DS18B20 1-wire sensors connected in series to GPIO pin 4, a 20 x 4 parallel LCD display based on the <a style="color: rgb(51, 255, 51);" href="https://en.wikipedia.org/wiki/Hitachi_HD44780_LCD_controller">Hitachi HD44780 display driver</a> and a
@@ -35,8 +35,8 @@ open. If no LCD is used, just run the common of a SPDT microswitch to
 will surely destroy your RPi. While not required, an <a style="color: rgb(51, 255, 51);" href="https://www.adafruit.com/products/2029">Adafruit Pi
 Cobbler Plus</a> simplifies wiring this up on a breadboard.</p>
 
-<br><h2>Complex Controller Configuration</h2><img style="width: 800px; height: 675px;" alt="Complex Controller Configuration" src="CellarWardenIO_bb.jpg"><p>In
-this example, CellarWarden is configured to control several actuators
+<br><h2>Complex Controller Configuration</h2><img style="width: 800px; height: 675px;" alt="Complex Controller Configuration" src="TempehWardenIO_bb.jpg"><p>In
+this example, TempehWarden is configured to control several actuators
 and uses two (up to 8) DS18B20 1-wire temperature sensors, two DHT22
 temp/humidity probes, a 20 x 4 LCD panel over the <a style="color: rgb(51, 255, 51);" href="https://en.wikipedia.org/wiki/I%C2%B2C">I2C bus</a>.
 All inputs and outputs are buffered by I2C compatible bi-directional

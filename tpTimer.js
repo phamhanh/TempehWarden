@@ -1,4 +1,4 @@
-//tpTimer.js - time proportioning routines for CellarWarden.
+//tpTimer.js - time proportioning routines for TempehWarden.
 var act = require('./actuators.js');
 var utils = require('./utils.js');
 

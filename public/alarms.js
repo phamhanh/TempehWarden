@@ -197,8 +197,8 @@ function alarmsDialogData( data ) {
         if (data.emailAddr2 != "" ) {
             emData.addresses = emData.addresses + ", " + data.emailAddr2;
         };
-        emData.subject = "Test notification from CellarWarden";
-        emData.text = "Testing the email notification function of CellarWarden.";                
+        emData.subject = "Test notification from TempehWarden";
+        emData.text = "Testing the email notification function of TempehWarden.";                
 
         $.confirm( "Send test email?", "Test Email/SMS Addresses", function() {
             //Send a socket to tell the server to send a test email.

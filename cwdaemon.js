@@ -1,4 +1,4 @@
-//cwdaemon.js - Daemonize CellarWarden using forever library.
+//cwdaemon.js - Daemonize TempehWarden using forever library.
 
 var forever = require( 'forever-monitor' );
 var utils = require( './utils.js' );
@@ -43,14 +43,14 @@ child.on( 'watch:restart', function( info ) {
 
 // If ctrl+c is hit, free resources, turn off all actuators and exit.
 process.on('SIGINT', function() {
-    utils.log( 'CellarWarden is shutting down after Ctrl-C (SIGNINT).', 'white', true );
+    utils.log( 'TempehWarden is shutting down after Ctrl-C (SIGNINT).', 'white', true );
     //utils.shutDown( config, ctrls );
     //process.exit();
 });
 
 // If process is terminated, free resources, turn off all actuators and exit.
 process.on('SIGTERM', function() {
-    utils.log( 'CellarWarden is shutting down after termination signal received (SIGTERM).', 'white', true );
+    utils.log( 'TempehWarden is shutting down after termination signal received (SIGTERM).', 'white', true );
     //utils.shutDown( config, ctrls );    
     //process.exit();
 });
@@ -62,5 +62,5 @@ process.on( 'exit', function() {
 
 //Deal with uncaught exceptions...
 process.on( 'uncaughtException', function( err ) {
-  utils.log( 'Caught exception in CellarWarden: ' + err );
+  utils.log( 'Caught exception in TempehWarden: ' + err );
 });

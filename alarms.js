@@ -1,4 +1,4 @@
-//alarms.js - adds alarm functionality to CellarWarden. Test1
+//alarms.js - adds alarm functionality to TempehWarden. Test1
 
 var utils = require( './utils.js' );
 
@@ -390,7 +390,7 @@ function almTrigger( timeStamp, duration, condString, alarms2, series1, config )
                 var emPassword = alarms2.mailPass;
                 var emAddresses = (alarms2.emailAddr2 !=='') ? 
                     ( alarms2.emailAddr1 + ', ' + alarms2.emailAddr2) : ( alarms2.emailAddr1);
-                var emSubject = 'CellarWarden Alarm Notification';
+                var emSubject = 'TempehWarden Alarm Notification';
                 var emText = timeStamp + ' - ALARM Activated!\n' +
                     config.configTitle + ': ' + condString; 
                 sendEmail( emService, emUser, emPassword, emAddresses, emSubject, emText );

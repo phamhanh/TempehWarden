@@ -1,4 +1,4 @@
-//Sensors.txt - Describes sensor objects for CellarWarden.
+//Sensors.txt - Describes sensor objects for TempehWarden.
 
 Idea is to make sensors objects in an array. When polling for sensor data, increment through sensor array to obtain all sensor data. To store data to main logfile, provide upto 20 fields to store to. sensors.js will call external sensor "device drivers" to access individual sensor values. Device drivers would look like: sensor_dht.js, sensor_gpio.js, sensor_ds18b20.js, sensor_brewometer.js, sensor_sensorTag.js, etc. Each sensor will also have an associated html file (and external .js file) to access as a dialog for configuring, as well as a panel html and js files to display on Panel tab.
 
@@ -44,5 +44,5 @@ sensorParam: { //Each sensor can have multiple parameters.
 Each sensor type will have an associated "driver." The driver will contain a prototype of the sensor object (as described above), along with the following routines:
 
 1. Configure - custom info about how to configure this sensor, including auto-find routines to list available sensors of this type.
-2. Initialize - routine to initialize sensor when CellarWarden first starts, or when the sensor configuration has been updated.
+2. Initialize - routine to initialize sensor when TempehWarden first starts, or when the sensor configuration has been updated.
 3.  
